@@ -25,9 +25,15 @@ ___
 
 ___
 
-❔: 포스트 상세페이지에서 정렬이 어긋남.(post컴포넌트에서 div나 p태그로 지정시 줄바꿈이 안되고, pre태그는 영역밖으로 넘어감)
+❔: 포스트 상세페이지에서 정렬이 어긋남.(post컴포넌트에서 div나 p태그로 지정시 줄바꿈이 안됨. pre태그는 영역밖으로 넘어감)
 
 ❗: pre태그로 설정하되 css에서 white-space와 word-wrap을 부여.
+
+___
+
+❔: 빌드 후 페이지가 렌더링되지 않음.(body와 root는 뜨는 것을 보아 App컴포넌트 이후의 문제로 추정)
+
+❗: 라우팅 홈페이지 설정과정에서의 문제. BrowserRouter 태그의 basename을 {process.env.PUBLIC_URL}로 설정.
 
 <br/><br/>
 
