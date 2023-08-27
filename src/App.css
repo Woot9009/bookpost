@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Yeon+Sung&display=swap');
+body {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0px;
+  font-family: 'Nanum Pen Script';
+  background-color: burlywood;
+  justify-content: center;
+}
+
+@media (min-width: 650px) {
+  .App {
+    width: 640px;
+  }
+}
+
+@media (max-width: 650px) {
+  .App {
+    width: 90vw;
+  }
+}
+
+#root {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.App {
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+/* MyButton */
+
+.MyButton {
+  padding: 10px 20px;
+  white-space: nowrap;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: 'Nanum Pen Script';
+  cursor: pointer;
+}
+
+.MyButton_default {
+  color: black;
+  background-color: #ececec;
+}
+
+.MyButton_positive {
+  color: black;
+  background-color: burlywood;
+}
+
+.MyButton_negative {
+  color: white;
+  background-color: indianred;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid #ececec;
+}
+
+header > div {
+  display: flex;
+}
+
+header .head_text {
+  width: 50%;
+  font-size: 25px;
+  justify-content: center;
+}
+
+header .head_btn_left {
+  width: 25%;
+  justify-content: start;
+}
+
+header .head_btn_right {
+  width: 25%;
+  justify-content: end;
+}
+
+header button {
+  font-family: 'Nanum Pen Script';
+}
+
+/* PostList */
+.PostList .menu_wrapper {
+  display: flex;
+  margin: 20px 0 30px;
+  justify-content: space-between;
+}
+
+.PostList .menu_wrapper .right_col {
+  flex-grow: 1;
+}
+
+.PostList .menu_wrapper .right_col button {
+  width: 100%;
+}
+
+.PostList .ControlMenu {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: 'Nanum Pen Script';
+  cursor: pointer;
+  background-color: #ececec;
+}
+
+/* PostItem */
+.PostItem {
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 1px solid #ececec;
+  justify-content: space-between;
+}
+
+.PostItem .thumbnail_wrapper {
+  display: flex;
+  min-width: 120px;
+  height: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+  background-color: rgba(150, 79, 16, 0.2);
+}
+
+.PostItem .info_wrapper {
+  margin-left: 20px;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.PostItem .post_date {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.PostItem .post_content_preview {
+  font-size: 18px;
+}
+
+.PostItem .btn_wrapper {
+  min-width: 70px;
+}
+
+/* PostEditor */
+
+.PostEditor {
+}
+
+.PostEditor section {
+  margin-bottom: 40px;
+}
+
+.PostEditor h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.PostEditor .input_date {
+  border: none;
+  border-radius: 5px;
+  background-color: #ececec;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Nanum Pen Script';
+}
+
+.PostEditor .genre_list_wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 2%;
+}
+
+.PostEditor textarea {
+  font-family: 'Yeon Sung';
+  font-size: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 200px;
+  resize: vertical;
+  border: none;
+  border-radius: 5px;
+  background-color: #ececec;
+  padding: 20px;
+}
+
+.PostEditor .control_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Genre Item */
+
+.GenreItem {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.GenreItem img {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.GenreItem span {
+  font-size: 18px;
+}
+
+.GenreItem_off {
+  background-color: #ececec;
+}
+
+.GenreItem_on {
+  outline: 3px solid burlywood;
+}
+
+/* Post */
+
+.PostPage {
+
+}
+
+.PostPage section {
+  width: 100%;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.PostPage h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.PostPage .post_img_wrapper {
+  outline: 3px solid burlywood;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.PostPage .post_img_wrapper img {
+  width: 60%;
+}
+
+.PostPage .genre_descript {
+  font-size: 25px;
+}
+
+.PostPage .post_content_wrapper {
+  width: 100%;
+  background-color: #ececec;
+  border-radius: 5px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.PostPage .post_content_wrapper pre {
+  padding: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: auto;
+  text-align: justify;
+  font-size: 20px;
+  font-family: 'Yeon Sung';
+  font-weight: 400;
+}
